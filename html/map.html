@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+
+    <link href="../fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/logo/favicon-32x32.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="../css/map.css">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #chartdiv{
+            height:100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+          <img src="../img/logo/logo.png">
+          <div class="title"><h1>Know Covid-19</h1></div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/symptoms.html" >Symptoms</a></li>
+            <li><a href="../html/protocols.html" >Precautions</a></li>
+            <li><a href="../html/vaccination.html" >Vaccination</a></li>
+            <li><a href="../html/contact.html">Contact Us</a></li>
+            <button class="hbtn"> <a href="../html/faq.html">FAQ</a> </button>
+          </ul>
+        </nav>
+      </header>
+
+  
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/maps.js"></script>
+<script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+<script src="https://covid.amCharts.com/data/js/world_timeline.js"></script>
+<script src="https://covid.amCharts.com/data/js/total_timeline.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<div id="chartdiv"></div>
+
+       <footer>
+        <div class="footerContainer">
+           <div class="content">
+           <div class="desc">
+           Privacy & Security | Terms of Use | Trademarks | Legal | Genuine tools<br><br>
+           </div>
+         </div>
+         </div>
+       
+       </footer>
+       <script src="../js/map.js"></script>
+</body>
+</html>

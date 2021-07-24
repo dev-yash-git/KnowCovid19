@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+  <meta charset='UTF-8'>
+  <title>Home</title>
+
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <link rel="shortcut icon" href="../img/logo/favicon-32x32.png" type="image/png" sizes="16x16">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="../fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      <img src="../img/logo/logo.png">
+      <div class="title"><h1>Know Covid-19</h1></div>
+    </div>
+
+    
+
+    <nav>
+      <ul>
+        <li><a href="../html/index.html" class="active">Home</a></li>
+        <li><a href="../html/contact.html">Contact Us</a></li>
+        <button class="hbtn"> <a href="../html/faq.html">FAQ</a> </button>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="content-wrapper">
+    <div class="portfolio-items-wrapper">
+
+
+      <a href="../html/vaccination.html" target="_blank">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../img/home/vaccination.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Click Here To Register Yourself &<br>Know More About Vaccination!</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="../html/symptoms.html" target="_blank">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../img/home/symptoms.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/eventbrite.png" alt="">
+            </div>
+
+            <div class="subtitle">Symptoms Of Corona,<br>Click To Know More!</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="../html/protocols.html" target="_blank">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../img/home/precautions.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/shop-hacker.png" alt="">
+            </div>
+
+            <div class="subtitle">Governemnt Protocols & Safety Tips,<br>Click Here To Know More!</div>
+          </div>
+        </div>
+      </a>
+
+
+      <a href="../html/map.html" target="_blank">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../img/home/world.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle">World-Map Of Covid-19 Spread,<br>Click To Know More!</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="../html/worldStats.html" target="_blank">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../img/home/worldstats.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/crondose.png" alt="">
+            </div>
+
+            <div class="subtitle">Worlwide Covid-19 Statistics,<br>Click Here To Know More!</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="../html/indiaStats.html" target="_blank">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../img/home/indiastats.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/dailysmarty.png" alt="">
+            </div>
+
+            <div class="subtitle">Covid-19 Statistics Of India,<br>Click Here To Know More!</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="../html/faq.html" target="_blank">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../img/home/faq.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/dashtrack.png" alt="">
+            </div>
+
+            <div class="subtitle">General Questions About Corona,<br> Click To Know More!</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="../html/dropdown.html" target="_blank">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../img/home/ngo2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/dashtrack.png" alt="">
+            </div>
+
+            <div class="subtitle">NGO's Working 24x7,<br> Click To Know More!</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="../html/resources.html" target="_blank">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(../img/home/resources.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/dashtrack.png" alt="">
+            </div>
+
+            <div class="subtitle">Resources<br>Click To Know More!</div>
+          </div>
+        </div>
+      </a>
+
+
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="footerContainer">
+      <div class="content">
+        <div class="logos">
+         
+        </div>
+        <div class="desc">
+          Privacy & Security | Terms of Use | Trademarks | Legal | Genuine tools<br><br>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

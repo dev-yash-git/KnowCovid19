@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>NGO Data</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../css/dropdown.css">
+
+    <link href="../fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/logo/favicon-32x32.png" type="image/png" sizes="16x16">
+  </head>
+
+  <body onload="resetSelection()">
+
+    <header>
+      <div class="logo">
+        <img src="../img/logo/logo.png">
+        <div class="title"><h1>Know Covid-19</h1></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/symptoms.html" >Symptoms</a></li>
+          <li><a href="../html/protocols.html" >Precautions</a></li>
+          <li><a href="../html/vaccination.html" >Vaccination</a></li>
+          <li><a href="../html/contact.html"  >Contact Us</a></li>
+          <button class="hbtn"> <a href="../html/faq.html">FAQ</a> </button>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+
+      <h1>This Page Is Under Development</h1>
+      <h2>Find The NGO's Working Around You...</h2>
+      <select id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+        <option value="" disabled selected>Choose State</option>
+        <!-- <option>Odisha</option> -->
+        <option>Maharashtra</option>
+        <option>Karnataka</option>
+        <option>Rajasthan</option>
+        <option>Uttar Pradesh</option>
+        <option>Madhya Pradesh</option>
+      </select>
+  
+      <select id="citySelect" size="1">
+        <option value="" disabled selected>Choose City</option>
+        <option></option>
+      </select>
+  
+      <button onclick="displaySelected()">show selected</button>
+    </div>
+
+
+
+    <footer>
+      <div class="footerContainer">
+     <div class="content">
+         <div class="desc">
+         Privacy & Security | Terms of Use | Trademarks | Legal | Genuine tools<br><br>
+         </div>
+       </div>
+       </div>
+   
+   </footer>
+
+    <script type="text/javascript">
+      
+      const citiesByState = {
+          Maharashtra: ["Mumbai", "Pune", "Nagpur", "Aurangabad"],
+          Karnataka: ["Bangalore"],
+          Rajasthan: ["Jaipur", "Ajmer", "Udaipur", "Kota"],
+          "Uttar Pradesh": ["Lucknow", "Kanpur", "Varanasi", "Noida", "Prayagraj", "Agra"],
+          "Madhya Pradesh": ["Bhoapl", "Indore", "Jabalpur", "Gwalior"]
+        //   Odisha: ["Bhubaneswar", "Puri", "Cuttack"]
+      };
+
+      function makeSubmenu(value) {
+        
+        if (value.length == 0)
+          document.getElementById("citySelect").innerHTML = "<option></option>";
+        
+        else {
+          var citiesOptions = "";
+          
+          for (cityId in citiesByState[value]) {
+            citiesOptions +=
+              "<option>" + citiesByState[value][cityId] + "</option>";
+          }
+          
+          document.getElementById("citySelect").innerHTML = citiesOptions;
+        }
+      }
+
+      function displaySelected() {
+        var country = document.getElementById("countrySelect").value;
+        var city = document.getElementById("citySelect").value;
+        alert(country + "\n" + city);
+      }
+
+      function resetSelection() {
+        document.getElementById("countrySelect").selectedIndex = 0;
+        document.getElementById("citySelect").selectedIndex = 0;
+      }
+
+    </script>
+
+  </body>
+</html>

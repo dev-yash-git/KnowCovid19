@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Vaccination</title>
+  
+  <link rel="shortcut icon" href="../img/logo/favicon-32x32.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="../css/vaccine.css">
+  
+  <link href="../fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+  <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="../img/logo/logo.png">
+      <div class="title"><h1>Know Covid-19</h1></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/symptoms.html" >Symptoms</a></li>
+        <li><a href="../html/protocols.html" >Precautions</a></li>
+        <li><a href="../html/vaccination.html" >Vaccination</a></li>
+        <li><a href="../html/contact.html">Contact Us</a></li>
+        <button class="hbtn"> <a href="../html/faq.html">FAQ</a> </button>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="sectionHeading"></div>
+      </div>
+
+      <!-- <div class="link">
+        <h2 class="animate__animated animate__heartBeat animate__infinite">Book your Vaccination Appointment <span> <a href="https://www.cowin.gov.in/home" >Here</a></span></h2>
+      </div> -->
+
+      <div class="container">
+        <h2 style="font-size:2rem; margin-top:10px; margin-bottom:8px" class="animate__animated animate__flash animate__infinite">Countries Leading in Vaccination</h2>
+        <canvas id="myChart"></canvas>
+        
+        <div class="card">
+          <h3 class="animate__animated animate__flash animate__infinite animate__slow">Vaccination is Need of the Hour</h3>
+          <hr>
+          <div class="cardBody">
+            <div class="cardContent">
+              <p>Considering the fact that COVID cases continue to rise in and around the world and while the young and
+                the elderly are struggling to keep themselves safe from the deadly virus, COVID vaccines have become the
+                need of the hour and there is no way ahead without them.
+                The second wave of coronavirus has not only taken a toll on the most vulnerable, but also impacted the
+                health of the younger population. While you may not feel the need to get vaccinated, given that you're
+                young or healthy, the group of people who are most susceptible to the virus can only be protected
+                through mass vaccination.</p>
+            </div>
+            <div class="cardImg">
+              <img src="../img/vaccination/timetovaccinate.jpg" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card vaccinesdetail">
+          <h3 class="animate__animated animate__shakeX  animate__slow animate__infinite">Vaccines Available in India</h3>
+          <hr>
+          <div class="innercards">
+            <div class="innercard">
+              <div class="innercardheading">
+                <img src="../img/vaccination/covaxin.jpg" alt="">
+                <h4>Covaxin</h4>
+              </div>
+              <div class="innercardcontent">
+                <p>The vaccine is developed using Whole-Virion Inactivated Vero Cell derived platform technology.
+                  Inactivated vaccines do not replicate and are therefore unlikely to revert and cause pathological
+                  effects.</p>
+              </div>
+            </div>
+
+            <div class="innercard">
+              <div class="innercardheading">
+                <img src="../img/vaccination/covishield.jpg" alt="">
+                <h4>Covishield</h4>
+              </div>
+              <div class="innercardcontent">
+                <p>Known as ChAdOx1 nCoV-19 or AZD1222, the vaccine is based on a weakened version of a common cold
+                  virus or the adenovirus that is found in chimpanzees. This viral vector contains the genetic material
+                  of the SARS-CoV-2 spike protein — protrusions present on the outer surface of the virus that help it
+                  bind with the human cell. </p>
+              </div>
+            </div>
+
+            <div class="innercard">
+              <div class="innercardheading">
+                <img src="../img/vaccination/Sputnik_V.jpg" alt="">
+                <h4>Sputnik_V</h4>
+              </div>
+              <div class="innercardcontent">
+                <p>Sputnik V uses a weakened virus to deliver small parts of a pathogen and stimulate an immune
+                  response. The Sputnik V (Gam-COVID-Vac) vaccine reduces the time taken for the actual development of
+                  immunity to SARS-CoV-2</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="card">
+          <h3 >Follow the Preventions even after getting Fully Vaccinated </h3>
+          <hr>
+          <div class="cardBody">
+            <div class="cardContent">
+              <p>Since Vaccines are not 100% effective against coronavirus therefore some portion of the population
+                might still get infected from corona virus. Therefore they are advised to follow all the preventive
+                measure after getting fully vaccinated. </p>
+            </div>
+            <div class="cardImg">
+              <img src="../img/vaccination/3749898.jpg" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="link">
+          <h2 class="animate__animated animate__heartBeat animate__infinite">Book your Vaccination Appointment <span> <a href="https://www.cowin.gov.in/home" >Here</a></span></h2>
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footerContainer">
+       <div class="content">
+       <div class="desc">
+       Privacy & Security | Terms of Use | Trademarks | Legal | Genuine tools<br><br>
+       </div>
+     </div>
+     </div>
+   
+   </footer>
+
+  <script src="../js/vaccination.js"></script>
+</body>
+
+</html>
